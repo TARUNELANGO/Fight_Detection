@@ -43,7 +43,7 @@ Python - Python is utilised, which is a popular programming language that is wel
 
 Google Colaboratory - To facilitate the development of Python-based projects, such  as  Machine  Learning  and  Deep  Learning  implementations,  Google  has created an environment called Google Colaboratory. When we need aid with jobs that need a lot of processing power, we may utilise Google's Graphics Processor Unit  (GPU)  or  Tensor  Processing  Unit  (TPU)  for  free.  A  fair  amount  of processing power is required for this task, and therefore it is employed here. 
 
-**RESULTS AND DISCUSSION** 
+## RESULTS AND DISCUSSION
 
 The following graphical representation demonstrates the accuracy of testing and training in this section. When a dataset of 1000 videos with an average duration of 7 seconds is used as input, the training and testing accuracy and loss for the MobileNet v2 model are presented in Fig. 4.1. For each period, 350 movies from the violence class and 350 films from the non-violence class are trained. Training yielded  96%  accuracy,  whereas  testing  yielded  95%  accuracy  using  CCTV footage that was not included in the dataset. The resultant video frames are shown in Figure 4.3. 
 
