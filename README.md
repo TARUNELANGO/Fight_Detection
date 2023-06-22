@@ -9,7 +9,7 @@ is fed the frames in order to identify potentially violent scenes. Frames are
 eliminated if they contain no instances of violence. The frame with the violence 
 identified is acquired, and then the image quality is improved.
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.005.png)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/Methodology.png)
 
 Figure 1: Methodology 
 
@@ -17,7 +17,7 @@ Figure 1: Methodology
 
 There are a total of 1000 videos in the dataset, split evenly between violent and peaceful scenes. Most of the videos are from closed-circuit television, and their average length is about 5 seconds. During each epoch, 350 movies are selected at random from both the violent and non-violent groups for training purposes. 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.006.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/Dataset.png)
 
 Figure 2: Video clips from the violence dataset 
 
@@ -29,7 +29,7 @@ The module displays a resizing cell with a stride of 2 and a residual cell with 
 
 MobileNetV2 primarily made use of the linear bottleneck and inverted residual block  methods.  Information  loss  due  to  nonlinear  functions  like  ReLU  is mitigated by increasing the channel size of input in the linear bottleneck layer. The idea is based on the notion that even if some information is lost in one channel,  it  could  still  be  present  in  the  other  nine.  The  channel  dimension structure of a normal residual block is ("wide" - "narrow" - "wide"), whereas that of an inverted residual block is ("narrow" - "wide" - "narrow"). The memory footprint can be decreased by using skip links between skinny layers as opposed to thicker ones. 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.007.png)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/MobileNetV2.png)
 
 Figure 3: MobileNet v2 Architecture 
 
@@ -47,7 +47,7 @@ Google Colaboratory - To facilitate the development of Python-based projects, su
 
 The following graphical representation demonstrates the accuracy of testing and training in this section. When a dataset of 1000 videos with an average duration of 7 seconds is used as input, the training and testing accuracy and loss for the MobileNet v2 model are presented in Fig. 4.1. For each period, 350 movies from the violence class and 350 films from the non-violence class are trained. Training yielded  96%  accuracy,  whereas  testing  yielded  95%  accuracy  using  CCTV footage that was not included in the dataset. The resultant video frames are shown in Figure 4.3. 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.008.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/AccuracyAndLoss.png)
 
 Figure 4.1: Accuracy and Error of the training set 
 
@@ -55,33 +55,33 @@ Figure 4.1's accuracy and loss attain a stable level of increment and decrement 
 
 As input, a violent video is sent into the system. Figure 4.3 illustrates a video clip classified as containing aggressive behaviour. Another video clip with no violent actions was provided as input.  Figure 4.4 shows a video clip that  is clearly labelled as deceptive or violent. 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.009.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/ConfusionMatrix.png)
 
 Figure 4.2: Confusion matrix of the trained model 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.010.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/Violence1.png)
 
 Figure 4.3: Output frame that recognized violence 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.011.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/Violence2.png)
 
 Figure 4.4: Output frame that recognized violence 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.012.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/Violence3.png)
 
 Figure 4.5: Output frame that recognized violence 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.013.jpeg)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/NonViolence1.png)
 
 Figure 4.6: Output frame that did not recognize violence 
 
 **Comparison With CNN-LSTM Architecture:** 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.014.png) ![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.015.png)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/LSTMComparison.png)
 
 Figure 4.7: Comparison of Training and Testing accuracy of MobileNet v2 and CNN**-**LSTM Models** 
 
-![](Aspose.Words.6c1d07dc-7120-4b1a-af5b-29f7f4e8c982.016.png)
+![](https://github.com/TARUNELANGO/Fight_Detection/blob/main/images/Performance.png)
 
 Figure 4.8: Performance Metrics of MobileNet v2 model 
 
