@@ -9,4 +9,4 @@ is fed the frames in order to identify potentially violent scenes. Frames are
 eliminated if they contain no instances of violence. The frame with the violence 
 identified is acquired, and then the image quality is improved.
 
-![](https://drive.google.com/file/d/1p1WVi0XxmEDVkr0xHKMfez_qChaZvGlr/view?usp=sharing)
+![](https://drive.google.com/file/d/1p1WVi0XxmEDVkr0xHKMfez_qChaZvGlr/view)
